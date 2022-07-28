@@ -1,0 +1,4 @@
+--SELECT COUNT(e.id) AS "currentExperiences"  FROM experiences e GROUP BY  e."endDate"<>null;
+--SELECT e."userId"  AS id, COUNT(e.id) AS educations FROM educations e GROUP BY e."userId";
+--SELECT sub.name AS writer, COUNT(t.id) AS "testimonailCount" FROM (SELECT id, name FROM users WHERE users.id=435)sub  JOIN testimonials t ON sub.id=t."writerId" GROUP BY sub.name;
+--SELECT MAX(j.salary) AS "maximumSalary", r.name FROM applicants a JOIN jobs j ON j.id=a."jobId" JOIN roles r  ON  r.id=j."roleId" GROUP BY r.name;
